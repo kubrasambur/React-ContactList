@@ -1,6 +1,47 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Patika.dev](https://app.patika.dev/) Project assignment I developed to reinforce what I learned in React Native trainings.
+
+## Features
+- Contacts can be filter
+- new contacts addable
+
+## Özellikler
+- Kişiler listelenebilir
+- yeni kişi eklenebilir
+
+## Image
+<img src="./src/components/img/Ekran görüntüsü 2022-04-25 135953.jpg" height="500" width="500"><img/>
+
+## Installation
+Clone this repository on your local machine.
+
+```
+git clone https://github.com/kubrasambur/React-ContactList.git
+```
+
+## Usage
+To use it after cloning the project:
+```
+cd React-ContactList
+cd .
+```
+Run the following commands in the project folder to install the project dependencies.
+
+```
+npm init
+npm install
+```
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
+
+## To Run the Application
+In the project directory you can run:
+
+```
+npm start
+```
+## For More Information
+You can review the [React](https://reactjs.org/) documentation. 
 
 ## Available Scripts
 
