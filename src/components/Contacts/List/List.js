@@ -6,15 +6,15 @@ function List({ contacts }) {
   /* - elimizde bulunan contacts arrayini filtreliyoruz.
      - bu filtreleme işlemi bize her defasında bir item veriyor.
      - bu item bir obje olduğu için onu key lerine ayırıyoruz.
-     - some ile de herhangi bir item ın içinde filterText varsa bunu bana getir demiş oluyoruz
+     - keyleri de phone_number ve fullname
+     - some ile de herhangi bir key in içinde filterText adında girilen değer varsa oun getiriyor
   */
-  const filtered=contacts.filter((item)=>{
-      return Object.keys(item).some((key)=>
-          item[key].toString().toLowerCase().includes(filterText.toLowerCase())
-
-      )
-  })
-  console.log(filtered)
+  const filtered = contacts.filter((item) => {
+    return Object.keys(item).some((key) =>
+      item[key].toString().toLowerCase().includes(filterText.toLowerCase())
+    );
+  });
+  console.log(filtered);
 
   return (
     <div>
@@ -26,14 +26,12 @@ function List({ contacts }) {
       <ul className="list">
         {filtered.map((contact, i) => (
           <li key={i}>
-              <span>{contact.fullname}</span>
-              <span>{contact.phone_number}</span>
+            <span>{contact.fullname}</span>
+            <span>{contact.phone_number}</span>
           </li>
         ))}
       </ul>
-      <p>
-          Total Contacts : ({filtered.length})
-      </p>
+      <p>Total Contacts : ({filtered.length})</p>
     </div>
   );
 }

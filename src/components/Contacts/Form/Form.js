@@ -9,6 +9,7 @@ function Form({ addContact, contacts }) {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  //veri kayıt edildikten sonra input un içini boşaltmak için setform yaparak form un inputlarını boşaltıyoruz.
   useEffect(() => {
     setForm(initialFormValues);
   }, [contacts]);
